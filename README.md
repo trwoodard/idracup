@@ -5,6 +5,10 @@ Simplify your CLI interaction with your Dell PowerEdge R720's iDRAC.
 Quickly send a boot or shutdown command with this Python script.
 The script will establish an SSH channel via which you send your command.
 
+Please note: if you have a hypervisor or OS running on your server, it is generally
+better to shutdown the server via the hypervisor. If the hypervisor is unresponsive
+or not installed, you can use this script to shut down the server.
+
 If you have issues running the script, be sure to install the requirements from requirements.txt
 
 For more information on iDRAC CLI commands, 

@@ -1,4 +1,4 @@
-# idracup
+# idracup.py
 A simple CLI script to start or stop your Dell PowerEdge with iDRAC
 
 Simplify your CLI interaction with your Dell PowerEdge R720's iDRAC.
@@ -9,3 +9,16 @@ If you have issues running the script, be sure to install the requirements from 
 
 For more information on iDRAC CLI commands, 
 see: https://cs.uwaterloo.ca/~brecht/servers/docs/PowerEdge-2600/en/Racadm/racadmc1.htm
+
+    Usage:      python idracup.py [HOST] [COMMAND] [OPTION]
+    Example:    python idracup.py i- 192.168.1.100 -s  
+
+    You will be prompted for the iDRAC password after entering the command
+    
+    Commands:
+    -s, --startup           issue the startup command
+    -d, --shutdown          issue the shutdown command
+
+    Options:
+    -h, --help              this help menu
+    -u, --user=USERNAME     login with a user other than root
